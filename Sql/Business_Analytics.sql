@@ -46,15 +46,13 @@ SELECT
     AVG(f.units_sold) AS avg_units_sold,
     SUM(f.units_sold * f.net_price) AS total_sales
 FROM retail.sales_fact f
+JOIN retail.date_dim d
+    ON f.date_id = d.date_id
 JOIN retail.staging_sales s
-    ON f.store_id = s.store_id
-   AND f.product_id = s.product_id
-   AND f.date_id = (
-        CAST(s.year AS INT) * 10000
-      + CAST(s.month AS INT) * 100
-      + CAST(s.day AS INT)
-   )
+    ON s.store_id = f.store_id
+   AND s.product_id = f.product_id
+   AND CAST(s.date AS DATE) = d.date
 GROUP BY s.promotion;
-select * from retail.staging_sales
 -------------------------------------
 -------------------------------------
+
