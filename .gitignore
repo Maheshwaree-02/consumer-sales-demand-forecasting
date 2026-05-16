@@ -1,0 +1,12 @@
+# Data
+data/raw/*
+*.csv
+*.pkl
+
+# Notebooks outputs
+*.ipynb_checkpoints/
+__pycache__/
+.ipynb_checkpoints
+
+# Models (optional)
+models/*.pkl
