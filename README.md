@@ -2,11 +2,13 @@
 
 **End-to-End AI Platform for Understanding Consumer Behavior & Demand Patterns**
 
+![Consumer Sales & Demand Forecasting Dashboard](powerbi/dashboard_mockup.png)
 
+> *Interactive Power BI dashboard (in progress). High-fidelity mockup shown above. Actual `.pbix` file and live dashboard coming soon.*
 
 ## 🎯 Project Overview
 
-Developed an **AI-powered demand forecasting system** that analyzes consumer purchasing behavior using rich retail data (promotions, weather, competitor pricing, seasonality, discounts, etc.). 
+Developed an **AI-powered demand forecasting system** that analyzes consumer purchasing behavior using rich retail data (promotions, weather, competitor pricing, seasonality, discounts, etc.).
 
 This project directly aligns with **AI applications in Consumer Behavior, Marketing, and Digital Ecosystems** by combining predictive modeling with interpretability to uncover *why* and *when* consumers buy.
 
@@ -29,43 +31,22 @@ This project directly aligns with **AI applications in Consumer Behavior, Market
 
 ## 📊 Results
 
-- **Model Performance**: 
+- **Model Performance**:
   - MAE: XX.XX | MAPE: XX.XX% | RMSE: XX.XX
 - Identified **Promotion** and **Price Elasticity** as top drivers of demand spikes.
 - Strong seasonal and weather-based consumer behavior patterns detected.
 
 ## 📁 Project Structure
+
+```bash
 ├── notebooks/
 │   ├── 01_Data_Cleaning_EDA.ipynb
 │   ├── 02_Feature_Engineering.ipynb
 │   └── 04_Forecasting_Models.ipynb
-├── data/processed/
+├── data/
+│   └── processed/
 ├── models/
 ├── powerbi/                  # Dashboard + Screenshots
 ├── sql/                      # Star Schema & KPI queries
 ├── reports/
-
-
-
-
-## 🔍 Key Consumer Insights
-
-- Promotions significantly lift demand, especially during weekends and specific weather conditions.
-- Price sensitivity varies strongly across categories and regions.
-- Competitor pricing gap and seasonality play major roles in consumer purchase decisions.
-
-## 🚀 How to Run
-
-1. Clone the repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Explore notebooks in order (01 → 04)
-4. Open Power BI dashboard (`powerbi/Consumer_Demand_Dashboard.pbix`)
-
-## 📈 Future Research Directions
-
-- Integrate external data (social sentiment, economic indicators)
-- Causal inference for marketing campaign effectiveness
-- Deep learning models (LSTM / Temporal Fusion Transformer)
-- Real-time deployment and A/B testing framework
-
----
+└── README.md
