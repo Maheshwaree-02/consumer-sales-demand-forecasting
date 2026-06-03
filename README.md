@@ -1,8 +1,7 @@
 # AI-Driven Consumer Demand Forecasting for Precision Marketing
 
 **End-to-End AI Platform for Understanding Consumer Behavior & Demand Patterns**
-
-![Consumer Sales & Demand Forecasting Dashboard](powerbi/dashboard_mockup.png)
+<img width="1693" height="929" alt="ChatGPT Image Jun 3, 2026, 07_12_47 PM" src="https://github.com/user-attachments/assets/95270dab-7789-4253-bc2a-7337754bf742" />
 
 > *Interactive Power BI dashboard (in progress). High-fidelity mockup shown above. Actual `.pbix` file and live dashboard coming soon.*
 
